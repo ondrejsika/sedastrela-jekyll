@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Seda Strela">
+        <meta name="author" content="Ondrej Sika, http://ondrejsika.com">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+        <title>{{ page.title }} | Šedá Střela</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-md-12">
+                    <h1>Šedá Střela</h1>
+                    <p class="description">53. Skautský oddíl Šedá Střela v Plzni</p>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="col-md-2">
+                    <ul id="menu">
+                        <li><a href="/">Aktuality</a></li>
+                        <li><a href="/o-nas.html">O nás</a></li>
+                        <li><a href="/historie.html">Historie</a></li>
+                        <li><a href="http://sedastrela.rajce.idnes.cz/" target="blank">Fotogalerie</a></li>
+                        <li><a href="http://www.facebook.com/sedastrela" target="blank">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7 main">
+                    <h2>{{ page.title }}</h2>
+                    {{ content }}
+                </div>
+                <div class="col-md-3">
+                    <h3>Kontakt</h3>
+                    <p><a href="mailto:info@sedastrela.cz">info@sedastrela.cz</a></p>
+                    <p>Vojtěch Hrůza: 605 024 539</p>
+                    <h3>Poslední akce</h3>
+                </div>
+            </div>
+            <div class="row" id="footer">
+                <div class="col-md-3">
+                    <hr>
+                    <p>2013 Šedá Střela</p>
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+        <script type="text/javascript" src="static/src/jquery.js"></script>
+        <script type="text/javascript" src="static/src/bootstrap.js"></script>
+    </body>
+</html>

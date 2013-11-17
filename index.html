@@ -1,0 +1,11 @@
+---
+layout: base
+title: Aktuality
+---
+
+{% for post in site.posts %}
+    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    <span>{{ post.date | date_to_string }}</span>
+    <p>{{ post.perex }}</p>
+    <a href="{{ post.url }}">Číst dále</a>
+{% endfor %}

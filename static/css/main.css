@@ -1,0 +1,49 @@
+body {
+    background: url(/static/bg.jpg) fixed;
+}
+
+a,
+a:hover {
+    color: black;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #EEEEEE;
+}
+
+#header {
+    height: 192px;
+    color: #EEEEEE;
+    background: url(/static/sedastrela_cover.png) no-repeat #000;
+}
+
+#header a {
+    color: #EEEEEE;
+}
+
+#header .description {
+    font-size: 1.2em;
+}
+
+#content div {
+    /*padding: 0;*/
+}
+
+#content .main {
+    /*margin-top: 20px;*/
+}
+
+#menu {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    font-size: 1.4em;
+}
