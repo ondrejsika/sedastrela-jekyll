@@ -1,5 +1,6 @@
 body {
     background: url(/static/bg.jpg) fixed;
+    text-align: justify;
 }
 
 a,
