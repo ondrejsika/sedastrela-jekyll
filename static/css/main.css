@@ -47,3 +47,7 @@ a:hover {
     padding: 0;
     font-size: 1.4em;
 }
+
+.opacity30 {
+    opacity: 0.3;
+}
