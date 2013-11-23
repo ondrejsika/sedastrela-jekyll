@@ -53,3 +53,14 @@ a:hover {
 .opacity30 {
     opacity: 0.3;
 }
+
+#header .logo-wraper {
+    display: inline-block;
+    float: right;
+}
+
+#header .logo-wraper img {
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 120px;
+}
