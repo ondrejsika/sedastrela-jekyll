@@ -4,8 +4,8 @@ title: Aktuality
 ---
 
 {% for post in site.posts %}
-    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    {% if site.more %}<a href="{{ post.url }}">{% endif %}<h3>{{ post.title }}</h3>{% if site.more %}</a>{% endif %}
     <span>{{ post.date | date_to_string }}</span>
     <p>{{ post.perex }}</p>
-    <a href="{{ post.url }}">Číst dále</a>
+    {% if site.more %}<a href="{{ post.url }}">Číst dále</a>{% endif %}
 {% endfor %}
