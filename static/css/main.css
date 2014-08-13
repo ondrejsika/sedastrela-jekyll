@@ -1,5 +1,6 @@
 body {
     background: url(/static/bg.jpg) fixed;
+    background-size: cover;
     text-align: justify;
 }
 
@@ -17,8 +18,9 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
+.grey-background {
     background-color: #EEEEEE;
+    opacity: 0.85;
 }
 
 #header {
