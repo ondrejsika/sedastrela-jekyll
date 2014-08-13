@@ -19,8 +19,8 @@ a:hover {
 }
 
 .grey-background {
-    background-color: #EEEEEE;
-    opacity: 0.85;
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, 0.85);
 }
 
 #header {
