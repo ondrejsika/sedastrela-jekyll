@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+<div class="data-photos"></div>
+
+<center><button class="data-load-next" onclick="load_next(10)">Načíst dalších 10 fotek</button></center>
+
+<script>
+var photos = {{ content }};
+
+function append_photo(url){
+    $('.data-photos').append('<div style="margin-bottom: 15px;"><img src="'+url+'" class="img-responsive"></div>')
+}
+
+function load_next(n){
+    for (var i = 0; i < n; i++){
+        photo = photos.shift()
+        if (! photo) {
+            $('.data-load-next').hide()
+            return;
+        }
+        url = photo[0]
+        append_photo(url)
+    }
+}
+
+load_next(10)
+</script>

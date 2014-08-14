@@ -17,6 +17,8 @@
             ga('create', 'UA-45810842-1', 'sedastrela.cz');
             ga('send', 'pageview');
         </script>
+        <script type="text/javascript" src="/static/src/jquery.js"></script>
+        <script type="text/javascript" src="/static/src/bootstrap.js"></script>
     </head>
     <body>
         <div class="container">
@@ -39,13 +41,13 @@
                         <li><a href="/o-nas.html">O nás</a></li>
                         <li><a href="/historie.html">Historie</a></li>
                         <li><a href="/pro-nove-cleny.html">Pro nové členy</a></li>
-                        <li><a href="http://sedastrela.rajce.idnes.cz/" target="blank">Fotogalerie</a></li>
+                        <li><a href="/fotogalerie/" target="blank">Fotogalerie</a></li>
                         <li><a href="/videa.html" target="blank">Videa</a></li>
                         <li><a href="http://www.facebook.com/sedastrela" target="blank">Facebook</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7 main">
-                    <h2>{{ page.title }}</h2>
+                    {% if page.hide_title %}{% else %}<h2>{{ page.title }}</h2>{% endif %}
                     {{ content }}
                 </div>
                 <div class="col-md-3">
@@ -67,8 +69,5 @@
             </div>
             </div>
         </div> <!-- /container -->
-
-        <script type="text/javascript" src="static/src/jquery.js"></script>
-        <script type="text/javascript" src="static/src/bootstrap.js"></script>
     </body>
 </html>

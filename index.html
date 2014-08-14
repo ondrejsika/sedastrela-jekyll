@@ -1,7 +1,22 @@
 ---
 layout: base
 title: Aktuality
+hide_title: true
 ---
+
+<div class="row" style="margin-top: 23px;">
+    <div class="col-md-4">
+        <img src="/static/bg.jpg" class="img-responsive">
+    </div>
+    <div class="col-md-4">
+        <img src="/static/bg.jpg" class="img-responsive">
+    </div>
+    <div class="col-md-4">
+        <img src="/static/bg.jpg" class="img-responsive">
+    </div>
+</div>
+
+<h2>{{ page.title }}</h2>
 
 {% for post in site.posts %}
     {% if site.more %}<a href="{{ post.url }}">{% endif %}<h3>{{ post.title }}</h3>{% if site.more %}</a>{% endif %}
