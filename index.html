@@ -19,8 +19,8 @@ hide_title: true
 <h2>{{ page.title }}</h2>
 
 {% for post in site.posts %}
-    {% if site.more %}<a href="{{ post.url }}">{% endif %}<h3>{{ post.title }}</h3>{% if site.more %}</a>{% endif %}
+    {% if post.more %}<a href="{{ post.url }}">{% endif %}<h3>{{ post.title }}</h3>{% if post.more %}</a>{% endif %}
     <span>{{ post.date | date_to_string }}</span>
     <p>{{ post.perex }}</p>
-    {% if site.more %}<a href="{{ post.url }}">Číst dále</a>{% endif %}
+    {% if post.more %}<a href="{{ post.url }}">Číst dále</a>{% endif %}
 {% endfor %}
